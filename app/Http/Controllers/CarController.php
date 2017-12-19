@@ -27,6 +27,8 @@ class CarController extends Controller
             'modelo'=>Input::get('modelo'),
             'mensaje'=>Input::get('message')
             ));
+           
+          return redirect("coches");
     }
 
     /* 
