@@ -29,12 +29,25 @@ Route::get('/contacto', function () {
 
 Route::post('contact', 'ContactoController@datosContacto');
 //rutas del coche
-Route::get('/coches', function () {
-    return view('coches');
-});
+/*
+Route::group(['middleware' => ['usuario','auth']], function() {
 
-Route::post('add','CarController@add');
-//
+    Route::get('/coches', function () {
+        return view('coches');
+    });
+
+    Route::post('add','CarController@add');
+});
+*/
+get('protected', ['middleware' => ['auth', 'usuario'], function() {
+    Route::get('/coches', function () {
+        return view('coches');
+    });
+
+    Route::post('add','CarController@add');
+
+}]);
+
 Route::get('/comofunciona', function () {
     return view('comofunciona');
 });
