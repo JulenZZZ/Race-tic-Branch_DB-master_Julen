@@ -39,10 +39,10 @@ Route::group(['middleware' => ['usuario','auth']], function() {
     Route::post('add','CarController@add');
 });
 */
-get('protected', ['middleware' => ['auth', 'usuario'], function() {
-    Route::get('/coches', function () {
+Route::get('/coches',['uses' => 'AdminController@showIndex','middleware'=>'auth', function () {
         return view('coches');
-    });
+
+    }]);
 
     Route::post('add','CarController@add');
 
