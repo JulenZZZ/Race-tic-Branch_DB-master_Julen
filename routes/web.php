@@ -46,7 +46,6 @@ Route::get('/coches',['uses' => 'AdminController@showIndex','middleware'=>'auth'
 
     Route::post('add','CarController@add');
 
-}]);
 
 Route::get('/comofunciona', function () {
     return view('comofunciona');
