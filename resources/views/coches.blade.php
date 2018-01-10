@@ -80,8 +80,12 @@
                 return false;
             }
         }
-        //notificacion de coche añadido mediante plugin de jQuery Notify.js
-        $("#btnContactUs").notify("Iepa");
+         //notificacion de coche añadido mediante plugin de jQuery Notify.js
+         $(document).ready(function(){
+
+            $("#btnContactUs").click(function() {
+                $(this).notify("Iepa","success");
+            });
 
     </script>
 
