@@ -34,6 +34,11 @@
     <link rel="stylesheet" href="../node_modules/sweetalert2/dist/sweetalert2.css">
 
     <link href="css/estiloshome.css" rel="stylesheet">
+    
+    <!-- Link de notify.js -->
+    <script src="../public/js/notify.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
 
