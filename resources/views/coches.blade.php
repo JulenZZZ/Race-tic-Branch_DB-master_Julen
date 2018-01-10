@@ -86,6 +86,7 @@
             $("#btnContactUs").click(function() {
                 $(this).notify("Iepa","success");
             });
+           });
 
     </script>
 
