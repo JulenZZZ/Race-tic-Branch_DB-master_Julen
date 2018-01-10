@@ -8,7 +8,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="images/racetic.png" /> <title>Race-tic</title>
-
+    
+    <!-- Link de notify.js -->
+    <script src="/js/notify.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Latest compiled and minified CSS -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -35,10 +39,7 @@
 
     <link href="css/estiloshome.css" rel="stylesheet">
     
-    <!-- Link de notify.js -->
-    <script src="../public/js/notify.js"></script>
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
 
 
 
